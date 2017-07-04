@@ -1,0 +1,250 @@
+{
+    "extName": {
+        "message": "语音闹钟",
+        "description": "扩展名称."
+    },
+    "extDes": {
+        "message": "定时语音弹窗提醒",
+        "description": "扩展描述."
+    },
+    "opTitle": {
+        "message": "语音闹钟设置",
+        "description": "设置页面title."
+    },
+    "opTitleTxt": {
+        "message": "选项",
+        "description": "设置页面中选项的标题(选项这两个字)."
+    },
+    "opEnable": {
+        "message": "是否启用提醒",
+        "description": "是否启用提醒功能的开关说明."
+    },
+    "opVoice": {
+        "message": "是否启用语音",
+        "description": "是否启用语音功能的开关说明."
+    },
+    "opSelcloBtn": {
+        "message": "选择时钟",
+        "description": "选择一个时钟的按钮说明."
+    },
+    "opSimulateBtn": {
+        "message": "模拟",
+        "description": "模拟提醒的按钮说明."
+    },
+    "opList": {
+        "message": "提醒列表",
+        "description": "提醒列表名称."
+    },
+    "opListAddbtn": {
+        "message": "增加",
+        "description": "提醒列表增加按钮名称."
+    },
+    "opListDelbtn": {
+        "message": "删除",
+        "description": "提醒列表增加删除名称."
+    },
+    "opListInbtn": {
+        "message": "导入",
+        "description": "提醒列表增加导入名称."
+    },
+    "opListOutbtn": {
+        "message": "导出",
+        "description": "提醒列表导出按钮名称."
+    },
+    "opListHeadCol2": {
+        "message": "稍后提醒",
+        "description": "提醒列表表头第二列名称."
+    },
+    "opListHeadCol3": {
+        "message": "提醒时间",
+        "description": "提醒列表表头第三列名称."
+    },
+    "opListHeadCol4": {
+        "message": "语言",
+        "description": "提醒列表表头第四列名称."
+    },
+    "opListHeadCol5": {
+        "message": "提醒标题(语音)",
+        "description": "提醒列表表头第五列名称."
+    },
+    "opListHeadCol6": {
+        "message": "提醒内容",
+        "description": "提醒列表表头第六列名称."
+    },
+    "opListHeadCol7": {
+        "message": "链接地址",
+        "description": "提醒列表表头第七列名称."
+    },
+    "opUpBtn": {
+        "message": "上移",
+        "description": "向上移."
+    },
+    "opDownBtn": {
+        "message": "下移",
+        "description": "向下移."
+    },
+    "opLinkGoogle0": {
+        "message": "正在连接goole.com…………",
+        "description": "谷歌连接是否成功."
+    },
+    "opLinkGoogle1": {
+        "message": "无法连接google服务器，只支持中、英语音",
+        "description": "谷歌连接是否成功."
+    },
+    "opLinkGoogle2": {
+        "message": "成功连接google服务器，支持其他语音",
+        "description": "谷歌连接是否成功."
+    },
+    "opReadBtn": {
+        "message": "读取",
+        "description": "读取本地配置文件按钮名称."
+    },
+    "opUploadBtn": {
+        "message": "上传",
+        "description": "上传配置信息按钮名称."
+    },
+    "opDraginfo": {
+        "message": "点击读取导入配置文件<br>或<br>将配置文件拖拽到这里<br><br>文件大小不能超过30K<br><br>读取后，点击上传",
+        "description": "谷歌连接是否成功."
+    },
+    "opNoRowsel": {
+        "message": "没有选择行",
+        "description": "提示信息：没有选择行."
+    },
+    "opNoFile": {
+        "message": "没有导入配置文件",
+        "description": "提示信息：没有导入配置文件."
+    },
+    "opNoContentDown": {
+        "message": "没有可以导出的内容",
+        "description": "提示信息：没有可以导出的内容."
+    },
+    "opNoContentDown": {
+        "message": "没有可以导出的内容",
+        "description": "提示信息：没有可以导出的内容."
+    },
+    "opDownloadFileName": {
+        "message": "语音闹钟配置文件.txt",
+        "description": "下载配置文件名."
+    },
+    "opRemindOpenInfo": {
+        "message": "提醒功能开启",
+        "description": "提示信息 提醒功能开启."
+    },
+    "opRemindCloseInfo": {
+        "message": "提醒功能关闭",
+        "description": "提示信息 提醒功能关闭."
+    },
+    "opVoiceOpenInfo": {
+        "message": "语音功能开启",
+        "description": "提示信息 语音功能关闭."
+    },
+    "opInfoManyErr": {
+        "message": "错误行数太多，请检查文件是否正确.",
+        "description": "提示信息."
+    },
+    "opInfoHErr": {
+        "message": "行存在问题.",
+        "description": "提示信息."
+    },
+    "opInfoTooLarge": {
+        "message": "文件大小不能超过30K.",
+        "description": "提示信息."
+    },
+    "opInfoNoTxt": {
+        "message": "您拖入的不是txt文件.",
+        "description": "提示信息."
+    },
+    "opVoiceCloseInfo": {
+        "message": "语音功能关闭",
+        "description": "提示信息 语音功能关闭."
+    },
+    "opDemoInfo": {
+        "message": "这是一个演示",
+        "description": "提示信息 这是一个演示."
+    },
+    "addTitle": {
+        "message": "提醒详细",
+        "description": "提醒详细页面标题."
+    },
+    "addRemLater": {
+        "message": "稍后提醒",
+        "description": "h2 稍后提醒."
+    },
+    "addRemTime": {
+        "message": "提醒时间",
+        "description": "h2 提醒时间."
+    },
+    "addRemTimeH": {
+        "message": "小时",
+        "description": "h2 提醒时间 小时."
+    },
+    "addRemTimeM": {
+        "message": "分钟",
+        "description": "h2 提醒时间 分钟."
+    },
+    "addRemPer": {
+        "message": "提醒频率",
+        "description": "h2 提醒频率."
+    },
+    "addRemPer": {
+        "message": "提醒频率",
+        "description": "h2 提醒频率."
+    },
+    "addRemContent": {
+        "message": "提醒内容",
+        "description": "h2 提醒内容."
+    },
+    "addRemContentT": {
+        "message": "标题(语音)",
+        "description": "h2 提醒内容 标题."
+    },
+    "addRemContentD": {
+        "message": "详细",
+        "description": "h2 提醒内容 详细."
+    },
+    "addRemContentL": {
+        "message": "链接",
+        "description": "h2 提醒内容 链接."
+    },
+    "addCommit": {
+        "message": "提 交",
+        "description": "提交按钮."
+    },
+    "addTS": {
+        "message": "必填项不能为空",
+        "description": "提示 必填项不能为空."
+    },
+    "weekarry": {
+        "message": "周日,周一,周二,周三,周四,周五,周六",
+        "description": "星期数组."
+    },
+    "weekarry2": {
+        "message": "星期日,星期一,星期二,星期三,星期四,星期五,星期六",
+        "description": "星期数组."
+    },
+    "everyday":{
+        "message": "每天",
+        "description": "每天."
+    },
+    "oneday":{
+        "message": "一次",
+        "description": "一次."
+    },
+     "never":{
+        "message": "永不",
+        "description": "永不."
+    },
+    "allSel":{
+        "message": "全选",
+        "description": "每天."
+    },
+    "noSel":{
+        "message": "全不选",
+        "description": "全不选."
+    },
+    "langsel":{
+        "message": "选择语言",
+        "description": "选择语言."
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title></title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/jquery.multiselect.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/slidingbtn.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="div-content">
+        <div id="clocks" style="position:absolute;z-index:99;">
+            <div id="clock1" class="round-clock-normal clock-bg">
+                <div class="hour-round div-round">
+                    <div class="div-lefthalfZ clock-bg"></div>
+                    <div class="half div-lefthalf"></div>
+                    <div class="half div-righthalf"></div>
+                    <div class="full clock-bg"> <i class="hourvalue"></i>
+                    </div>
+                </div>
+                <div class="min-round div-round">
+                    <div class="div-lefthalfZ clock-bg"></div>
+                    <div class="half div-lefthalf"></div>
+                    <div class="half div-righthalf"></div>
+                    <div class="full clock-bg"> <i class="minvalue"></i>
+                    </div>
+                </div>
+                <div class="sec-round div-round">
+                    <div class="div-lefthalfZ clock-bg"></div>
+                    <div class="half div-lefthalf"></div>
+                    <div class="half div-righthalf"></div>
+                    <div class="full clock-bg">
+                        <i class="secvalue"></i>
+                    </div>
+                </div>
+                <div id="c1-date" class="c1-date"></div>
+            </div>
+            <div class="clock-normal" id="clock2">
+                <div class="clock-xin"></div>
+                <div class="clock-xin2"></div>
+                <div id="date" class="date"></div>
+                <div id="hour" class="hour"></div>
+                <div id="min" class="min"></div>
+                <div id="sec" class="sec"></div>
+            </div>
+        </div>
+        <ul class="options">
+            <li style="font-size:22px;font-weight: bolder;">
+                <label id="opTitleTxt"></label>
+            </li>
+            <li>
+                <div class="option-name">
+                    <label id="opEnable"></label>
+                </div>
+                <div class="option-switch">
+                    <section>
+                        <!-- .slideThree -->
+                        <div class="slideThree">
+                            <input type="checkbox" value="None" name="isActivated" id="isActivated" name="check" checked />
+                            <label for="isActivated"></label>
+                        </div>
+                        <!-- end .slideThree -->
+                    </section>
+                </div>
+            </li>
+            <li>
+                <div class="option-name">
+                    <label id="opVoice"></label>
+                </div>
+                <div class="option-switch">
+                    <section>
+                        <!-- .slideThree -->
+                        <div class="slideThree">
+                            <input type="checkbox" value="None" name="tts" id="tts" name="check" checked />
+                            <label for="tts"></label>
+                        </div>
+                        <!-- end .slideThree -->
+                    </section>
+                </div>
+            </li>
+            <li style="height:60px;">
+                <div name="btndiv" class="button-group" style="margin-bottom:5px;">
+                    <a class="button button-block button-border button-rounded button-primary button-large" id="clocksel"></a>
+                    <a class="button button-block button-border button-rounded button-caution button-large" id="testbtn" name="testbtn"></a>
+                </div>
+            </li>
+
+        </ul>
+        <form id="options" style="background-color:#ECF0F5;position:relative;
+    margin: 0 auto;">
+            <h2 class="cr-title" id="opList">
+
+                <div style="float:right">
+                    <a href="#" class="ketchup tooltip" id='up_down' title="上移">
+                        <image src="images/arrow_up.png" />
+                    </a>
+                </div>
+            </h2>
+            <div name="btndiv" class="button-group" style="margin-bottom:5px;">
+                <a class="button button-primary" style="margin-left:40px;" id="addbtn" name="addbtn"></a>
+                <a class="button  button-caution" name="delbtn" id="delbtn"></a>
+                <a class="button button-highlight" name="inportbtn" id="inportbtn"></a>
+                <a class="button button-royal" name="exportbtn" id="exportbtn"></a>
+            </div>
+            <a style="position: absolute;right: 25px;margin-top: 10px;color: red;" target="_blank" href="http://www.google.com.hk" id="connect_google"
+                name="connect_google"></a>
+
+            <table class="bordered" name="remindTab" id="remindTab">
+                <thead>
+                    <tr>
+                        <th width="20px">
+                            <a class="divCheckBoxNoSel" id="checkAllSel"></a>
+                        </th>
+                        <th style="text-align:center;"></th>
+                        <th style="text-align:center;"></th>
+                        <th style="text-align:center;"></th>
+                        <th style="text-align:center;"></th>
+                        <th style="text-align:center;"></th>
+                        <th style="text-align:center;"></th>
+                    </tr>
+                </thead>
+            </table>
+        </form>
+    </div>
+    <div id="tip" style="display:none;opacity:1;z-index:20;"> <b id="tipinfo"></b>
+    </div>
+    <div id="overlay">
+    </div>
+    <div id="dialog">
+
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.multiselect.js"></script>
+    <script type="text/javascript" src="js/tantt.js"></script>    
+    <script type="text/javascript" src="js/overlay.js"></script>
+    <script type="text/javascript" src="js/FileSaver.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltipster.js"></script>
+    <script type="text/javascript" src="js/options.js" charset=”utf-8″></script>
+</body>
+
+</html>

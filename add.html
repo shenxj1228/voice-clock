@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/jquery.multiselect.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/slidingbtn.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.selectfx.css" />
+    <style type="text/css" media="screen">
+        .cs-options li span:hover,
+        li.cs-selected span {
+            color: hsl(200, 100%, 50%)!important;
+        }
+
+        .cs-options li span {
+            color: #566473;
+        }
+
+        .cs-skin-underline>span {
+            border-bottom: 1px solid #B9C1CA;
+        }
+
+        .selected-underline {
+            color: hsl(25, 100%, 50%);
+            border-bottom: 3px solid hsl(200, 100%, 50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 id="addRemLater"></h2>
+    </div>
+    <div class="labelBox" style="margin-left: 0;">
+        <input type="checkbox" name="used" id="used" />
+        <label for="used" class="check"></label>
+    </div>
+    <div id="tip" style="display:none;filter:alpha(opacity=100);opacity:1;">
+        <b id="tipinfo"></b>
+    </div>
+    <div>
+        <div>
+            <h2 id="addRemTime"></h2>
+        </div>
+        <div>
+            <section class="content">
+                <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" name="input" type="text" id="inputHour" />
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="inputHour">
+                        <span id="addRemTimeH" class="input__label-content input__label-content--hoshi"></span>
+                </label>
+                </span>
+                <br>
+                <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" name="input" type="text" id="inputMinute" />
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="inputMinute">
+                        <span id="addRemTimeM" class="input__label-content input__label-content--hoshi"></span>
+                </label>
+                </span>
+            </section>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2 id="addRemPer"></h2>
+        </div>
+        <select id='sel' multiple="multiple" size="7">
+        </select>
+    </div>
+    <div>
+        <div>
+            <h2 id="addRemContent"></h2>
+        </div>
+        <div>
+            <div style="width:350px;color: #6a7989;font-weight: bold;font-size: 70.25%;">
+                <select class="cs-select cs-skin-underline" id='langsel'>
+                </select>
+            </div>
+            <br>
+            <section class="content">
+                <span style="max-width:600px" class="input input--hoshi">
+                    <input   class="input__field input__field--hoshi" name="input" type="text" id="inputTitle" />
+                    <label  class="input__label input__label--hoshi input__label--hoshi-color-1" for="inputTitle">
+                        <span id="addRemContentT" class="input__label-content input__label-content--hoshi"></span>
+                </label>
+                </span>
+                <br>
+                <span style="max-width:600px" class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" name="input" type="text" id="inputContent" />
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="inputContent">
+                        <span id="addRemContentD" class="input__label-content input__label-content--hoshi"></span>
+                </label>
+                </span>
+                <br>
+                <span style="max-width:600px" class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" name="input" type="url" id="inputUrl" />
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="inputUrl">
+                        <span id="addRemContentL" class="input__label-content input__label-content--hoshi"></span>
+                </label>
+                </span>
+            </section>
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:20px">
+        <a class="button button-primary" id="sub" href="#"></a>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.multiselect.js"></script>
+    <script type="text/javascript" src="js/selectFx.js"></script>
+    <script type="text/javascript" src="js/addremind.js"></script>
+    <script type="text/javascript" src="js/overlay.js"></script>
+</body>
+
+</html>
